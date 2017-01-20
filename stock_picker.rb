@@ -1,14 +1,12 @@
-
-
-
 def stock_picker(stock_price_list)
 	profit_perspective_list = []
 	stock_price_list.each_with_index do |current_price, current_index|
 			stock_price_list[0..current_index].each_with_index do |past_price, past_index|
 				profit = current_price - past_price
-				profit_perspective_list << {:profit => profit,
-											:past_index => past_index,
-											:current_index => current_index}
+				profit_perspective_list << 
+				{:profit => profit,
+				:past_index => past_index,
+				:current_index => current_index}
 		end
 	end
 	best_profit = profit_perspective_list.max_by{|x| x[:profit]}
