@@ -1,3 +1,6 @@
+
+
+
 def stock_picker(stock_price_list)
 	profit_perspective_list = []
 	stock_price_list.each_with_index do |current_price, current_index|
