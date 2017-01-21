@@ -16,13 +16,11 @@ end
 
 def shift_calc(char_val, shift)
 	current_value = char_val + shift
-	unless (0..25).to_a.include?(current_value)
+	until (0..25).to_a.include?(current_value)
 		if current_value < 0
 			current_value += 26
-			current_value = shift_calc(current_value, 0)
 		else
 			current_value -= 26
-			current_value = shift_calc(current_value, 0)
 		end
 	end
 	current_value
@@ -32,4 +30,4 @@ end
 
 
 
-caesar_cipher("What A string!", 5)
+caesar_cipher("What A string!", 57)
