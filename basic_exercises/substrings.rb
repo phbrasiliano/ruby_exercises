@@ -1,13 +1,13 @@
 def substrings(text, dictionary)
-	results = {}
-	for target_word in dictionary
-		if text.scan(/#{target_word}/i).length ==0
-			next
-		else
-			results[target_word] = text.scan(/#{target_word}/i).length
-		end
-	end
-	puts results
+  results = {}
+  for target_word in dictionary
+    if text.scan(/#{target_word}/i).length ==0
+      next
+    else
+      results[target_word] = text.scan(/#{target_word}/i).length
+    end
+  end
+  puts results
 end
 
 dictionary = ["below","down","go","going","horn","how","howdy","it","i","low","own","part","partner","sit"]
