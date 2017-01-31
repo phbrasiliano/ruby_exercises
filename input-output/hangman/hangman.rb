@@ -2,7 +2,7 @@ require "./game.rb"
 
 path = "words_utf8.txt"
 
-game = Game.new(path)
-player = Player.new
+player = Player.set_player
+game = Game.new(path, player)
 
-game.play(player)
+game.call_menu
