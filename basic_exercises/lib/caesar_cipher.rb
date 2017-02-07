@@ -11,7 +11,7 @@ def caesar_cipher(text, shift)
       coded_string << char
     end
   end
-  puts coded_string
+  coded_string
 end
 
 def shift_calc(char_val, shift)
@@ -25,9 +25,3 @@ def shift_calc(char_val, shift)
   end
   current_value
 end
-
-
-
-
-
-caesar_cipher("What A string!", 57)
